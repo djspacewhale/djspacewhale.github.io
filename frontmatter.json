@@ -53,7 +53,12 @@
     {
       "title": "posts",
       "path": "[[workspace]]/_posts"
+    },
+    {
+      "title": "_site",
+      "path": "[[workspace]]/_site"
     }
   ],
-  "frontMatter.git.enabled": true
+  "frontMatter.git.enabled": true,
+  "frontMatter.website.host": "djspacewhale.github.io"
 }

@@ -4,3 +4,4 @@
 
 layout: home
 ---
+<a rel="me" href="https://mathstodon.xyz/@djspacewhale">Mastodon</a>
