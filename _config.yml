@@ -30,14 +30,12 @@ url: "https://djspacewhale.github.io" # the base hostname & protocol for your si
 github_username:  djspacewhale
 
 # Build settings
-theme: jekyll-bear-theme
+theme: minima
 plugins:
   - jekyll-spaceship
   - jekyll-feed
-  - jekyll-redirect-from
 
 whitelist:
-  - jekyll-redirect-from
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -62,48 +60,48 @@ whitelist:
 # more settings, from jekyll-bear-theme config
 markdown: kramdown
 
-compress_html:
-  clippings: all
-  comments: [""]
-  endings: [html, head, body, li, dt, dd, rt, rp, optgroup, option, colgroup, caption, thead, tbody, tfoot, tr, td, th]
-  profile: false
-  blanklines: false
-  ignore:
-    envs: []
+#compress_html:
+#  clippings: all
+#  comments: [""]
+#  endings: [html, head, body, li, dt, dd, rt, rp, optgroup, option, colgroup, caption, thead, tbody, tfoot, tr, td, th]
+#  profile: false
+#  blanklines: false
+#  ignore:
+#    envs: []
 
 # sass:
 #   sass_dir: css
 #   style:    compressed
 
-collections:
-  my_tags:
-    output: true
-    permalink: /tagged/:slug/
-defaults:
-  -
-    scope:
-      path: ""
-      type: my_tags
-    values:
-      layout: tagged
+#collections:
+#  my_tags:
+#    output: true
+#    permalink: /tagged/:slug/
+#defaults:
+#  -
+#    scope:
+#      path: ""
+#      type: my_tags
+#    values:
+#      layout: tagged
 
-permalink: /blog/:slug
-timezone: America/Denver
-future: false
+#permalink: /blog/:slug
+#timezone: America/Denver
+#future: false
 
 exclude:
 - README.md
 - LICENSE.md
 
-exclude: [vendor]
+#exclude: [vendor]
 
 #Blog: /blog
 
 # Add general links to site pages here
-links:
+#links:
   # Resume: /assets/resume.pdf
   
 
 # Add links for more focus here
-special_links:
+#special_links:
   # "Search": https://duckduckgo.com
