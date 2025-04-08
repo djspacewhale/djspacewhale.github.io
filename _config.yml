@@ -20,10 +20,9 @@
 
 title: Abstract Nonsense
 email: garrett.figueroa21@alumni.colostate.edu
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+description: >- # this means to ignore newlines until "locale:"
+  Howdy! This will be my personal website for assorted interests - math, music, 
+  film, baking, bicycling, and whatever else I'd like to connect with folks about.
 locale: en-US
 domain: "djspacewhale.github.io"
 baseurl: "" # the subpath of your site, e.g. /blog
