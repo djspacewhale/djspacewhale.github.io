@@ -125,6 +125,6 @@ defaults:
     layout: "posts"
 
 readme_index:
-  enabled:          false
+  enabled:          true
   remove_originals: false
   with_frontmatter: true
