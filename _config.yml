@@ -40,6 +40,11 @@ plugins:
   - jekyll-spaceship
   - jekyll-feed
 
+# enabling plugin to use readme.md for index
+
+plugins:
+  - jekyll-readme-index
+
 whitelist:
 
 # Exclude from processing.
@@ -110,3 +115,16 @@ exclude:
 # Add links for more focus here
 #special_links:
   # "Search": https://duckduckgo.com
+
+# Defaults for posts, enabling MathJax
+
+defaults:
+- scope:
+    path: "_posts"
+  values:
+    layout: "posts"
+
+readme_index:
+  enabled:          false
+  remove_originals: false
+  with_frontmatter: true

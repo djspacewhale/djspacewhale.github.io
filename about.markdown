@@ -1,18 +1,11 @@
 ---
 layout: default
-title: About
+title: Who?
 permalink: /about/
 ---
+My name's Garrett Figueroa!
+I grew up in Highlands Ranch, Colorado, in south Denver;
+went to Colorado State University for undergrad and Montana State University for grad school;
+and currently reside back in the Denver metro.
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
-
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+![Garrett Figueroa wearing a graduation cap and gown, walking across a stage at Montana State University commencement ceremony, surrounded by other graduates and faculty in academic regalia, with a joyful and proud expression](/assets/pictures-of-me/IMG_0377.jpg.jpeg)
