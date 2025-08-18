@@ -128,3 +128,8 @@ readme_index:
   enabled:          false
   remove_originals: false
   with_frontmatter: true
+
+# SEO gobbledygook
+
+gems:
+    -jekyll-seo-tag

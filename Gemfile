@@ -36,3 +36,7 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 # Uses readme.md for index file
 
 gem "jekyll-readme-index"
+
+# SEO optimizer
+
+gem 'jekyll-seo-tag'
