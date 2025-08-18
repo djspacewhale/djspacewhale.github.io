@@ -9,7 +9,7 @@ categories:
 fmContentType: post
 draft: false
 keywords: []
-slug: formalizing-categories-algebras-equational-theory
+slug: categories-algebras-equational-theory
 ---
 
 Recently I made a pull request at Agda-UniMath formalizing [categories of algebras over an equational theory](https://github.com/UniMath/agda-unimath/pull/1483).
