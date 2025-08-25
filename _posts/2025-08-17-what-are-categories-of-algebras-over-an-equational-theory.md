@@ -12,7 +12,7 @@ keywords: []
 slug: categories-algebras-equational-theory
 ---
 
-Recently I made a pull request at Agda-UniMath formalizing [categories of algebras over an equational theory](https://github.com/UniMath/agda-unimath/pull/1483).
+Recently I made a pull request at Agda-UniMath formalizing [categories of algebras over an equational theory][pr].
 Part of my goal with this website is sharing my work with non-mathematical friends, so in this post I aim to motivate all the words in that sentence.
 
 ## 1. What's algebra?
@@ -36,7 +36,7 @@ Multiplication in quasigroups is quite different from in more familiar examples 
 To see this, recall that property name, and recall that a **latin square** is a labeled square grid where each label value appears uniquely in each row and column.
 By labeling an $n \times n$ square with the numbers $1, ..., n$, and by defining a multiplication sending $i * j$ to the value in the $i$th row and $j$th column, we may identify finite quasigroups with latin squares![^1]
 
-![A latin square, pulled from https://www.dr-mikes-math-games-for-kids.com/blog/2016/10/magic-squares-from-latin-squares/. Note that each number appears uniquely in each row and column. What quasigroup is presented by this latin square?](/assets/math/The-lexicographically-earliest-Latin-square-of-order-4_Q320.jpg)
+![A latin square, pulled from https://www.dr-mikes-math-games-for-kids.com/blog/2016/10/magic-squares-from-latin-squares/. Note that each number appears uniquely in each row and column. What quasigroup is presented by this latin square?][latin-square]
 
 Quasigroups are a rich subject in their own right, as are rings and monoids and other gadgets unnamed, but the important connection between all is that we have a collection of stuff with some structure maps like multiplication that satisfy some equational identities.
 This "universal" generality is where we work for now.
@@ -150,3 +150,6 @@ That's all for now!
 [^2]: All that's meant by "dependent pair" is that the second component of each pair - in this case, the arities - *depends* on the function symbol in the first component.
 
 [^3]: This collection may not itself be a set!
+
+[pr]: https://github.com/UniMath/agda-unimath/pull/1483
+[latin-square]: /assets/math/The-lexicographically-earliest-Latin-square-of-order-4_Q320.jpg

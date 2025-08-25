@@ -42,8 +42,8 @@ plugins:
 
 # enabling plugin to use readme.md for index
 
-plugins:
-  - jekyll-readme-index
+#plugins:
+#  - jekyll-readme-index
 
 whitelist:
 
@@ -109,7 +109,7 @@ exclude:
 
 # Add general links to site pages here
 #links:
-  # Resume: /assets/resume.pdf
+#  Resume: /assets/resume.pdf
   
 
 # Add links for more focus here
@@ -137,3 +137,8 @@ gems:
 # timezone
 
 timezone: America/Denver
+
+# embed PDFs
+
+plugins:
+  - jekyll-pdf-embed

@@ -40,3 +40,7 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 # SEO optimizer
 
 gem 'jekyll-seo-tag'
+
+# embed PDFs
+
+gem 'jekyll-pdf-embed'
