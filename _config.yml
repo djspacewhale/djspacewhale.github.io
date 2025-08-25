@@ -29,7 +29,6 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://djspacewhale.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  djspacewhale
 linkedin_username: garf98
-
 mastodon:
   - username: djspacewhale
     instance: mathstodon.xyz
@@ -123,11 +122,6 @@ defaults:
     path: "_posts"
   values:
     layout: "posts"
-
-readme_index:
-  enabled:          false
-  remove_originals: false
-  with_frontmatter: true
 
 # SEO gobbledygook
 
