@@ -5,7 +5,7 @@ date: 2025-08-18T00:05:12.445Z
 categories:
     - agda
     - algebra
-    - category theory
+    - category-theory
 fmContentType: post
 draft: false
 keywords: []
