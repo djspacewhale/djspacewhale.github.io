@@ -70,5 +70,6 @@
     }
   ],
   "frontMatter.git.enabled": true,
-  "frontMatter.website.host": "https://djspacewhale.github.io/"
+  "frontMatter.website.host": "https://djspacewhale.github.io/",
+  "frontMatter.panel.openOnSupportedFile": true
 }
