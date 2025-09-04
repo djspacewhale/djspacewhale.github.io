@@ -38,13 +38,14 @@ theme: minima
 plugins:
   - jekyll-spaceship
   - jekyll-feed
+  - jekyll-pdf-embed
 
 # enabling plugin to use readme.md for index
 
 #plugins:
 #  - jekyll-readme-index
 
-whitelist:
+whitelist: []
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -131,8 +132,3 @@ gems:
 # timezone
 
 timezone: America/Denver
-
-# embed PDFs
-
-plugins:
-  - jekyll-pdf-embed
