@@ -34,11 +34,14 @@ mastodon:
     instance: mathstodon.xyz
 
 # Build settings
-theme: minima
+#theme: minima
+remote_theme: "jekyll/minima@v2.5.2" 
 plugins:
-  - jekyll-spaceship
+#  - jekyll-spaceship
   - jekyll-feed
   - jekyll-pdf-embed
+  - jekyll-include-cache
+#  - jekyll-seo-tag
 
 # enabling plugin to use readme.md for index
 
@@ -55,17 +58,19 @@ whitelist: []
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+Exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - LICENSE.md
 
 # more settings, from jekyll-bear-theme config
 markdown: kramdown
@@ -79,9 +84,9 @@ markdown: kramdown
 #  ignore:
 #    envs: []
 
-# sass:
-#   sass_dir: css
-#   style:    compressed
+sass:
+  sass_dir: css
+  style:    compressed
 
 #collections:
 #  my_tags:
@@ -96,12 +101,7 @@ markdown: kramdown
 #      layout: tagged
 
 #permalink: /blog/:slug
-#timezone: America/Denver
 #future: false
-
-exclude:
-- README.md
-- LICENSE.md
 
 #exclude: [vendor]
 
@@ -113,8 +113,8 @@ exclude:
   
 
 # Add links for more focus here
-#special_links:
-  # "Search": https://duckduckgo.com
+special_links:
+  "Search": https://duckduckgo.com
 
 # Defaults for posts, enabling MathJax
 
@@ -123,11 +123,6 @@ defaults:
     path: "_posts"
   values:
     layout: "posts"
-
-# SEO gobbledygook
-
-gems:
-    -jekyll-seo-tag
 
 # timezone
 

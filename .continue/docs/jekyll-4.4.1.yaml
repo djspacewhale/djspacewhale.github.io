@@ -1,0 +1,6 @@
+name: Jekyll
+version: 4.4.1
+schema: v1
+docs:
+  - name: Jekyll 4.4.1
+    startUrl: https://jekyllrb.com/docs/

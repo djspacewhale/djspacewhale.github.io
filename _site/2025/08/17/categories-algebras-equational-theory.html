@@ -1,64 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en"><head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Begin Jekyll SEO tag v2.8.0 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>What are categories of algebras over an equational theory? | Abstract Nonsense</title>
-<meta name="generator" content="Jekyll v4.4.1">
-<meta property="og:title" content="What are categories of algebras over an equational theory?">
-<meta property="og:locale" content="en_US">
-<meta name="description" content="Recently I made a pull request at Agda-UniMath formalizing categories of algebras over an equational theory. Part of my goal with this website is sharing my work with non-mathematical friends, so in this post I aim to motivate all the words in that sentence.">
-<meta property="og:description" content="Recently I made a pull request at Agda-UniMath formalizing categories of algebras over an equational theory. Part of my goal with this website is sharing my work with non-mathematical friends, so in this post I aim to motivate all the words in that sentence.">
-<link rel="canonical" href="http://localhost:4000/agda/algebra/category-theory/2025/08/17/categories-algebras-equational-theory.html">
-<meta property="og:url" content="http://localhost:4000/agda/algebra/category-theory/2025/08/17/categories-algebras-equational-theory.html">
-<meta property="og:site_name" content="Abstract Nonsense">
-<meta property="og:type" content="article">
-<meta property="article:published_time" content="2025-08-17T18:05:12-06:00">
-<meta name="twitter:card" content="summary">
-<meta property="twitter:title" content="What are categories of algebras over an equational theory?">
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="What are categories of algebras over an equational theory?" />
+<meta name="author" content="GitHub User" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Recently I made a pull request at Agda-UniMath formalizing categories of algebras over an equational theory. Part of my goal with this website is sharing my work with non-mathematical friends, so in this post I aim to motivate all the words in that sentence." />
+<meta property="og:description" content="Recently I made a pull request at Agda-UniMath formalizing categories of algebras over an equational theory. Part of my goal with this website is sharing my work with non-mathematical friends, so in this post I aim to motivate all the words in that sentence." />
+<link rel="canonical" href="http://localhost:4000/2025/08/17/categories-algebras-equational-theory.html" />
+<meta property="og:url" content="http://localhost:4000/2025/08/17/categories-algebras-equational-theory.html" />
+<meta property="og:site_name" content="Abstract Nonsense" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-08-17T18:05:12-06:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="What are categories of algebras over an equational theory?" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-08-17T18:05:12-06:00","datePublished":"2025-08-17T18:05:12-06:00","description":"Recently I made a pull request at Agda-UniMath formalizing categories of algebras over an equational theory. Part of my goal with this website is sharing my work with non-mathematical friends, so in this post I aim to motivate all the words in that sentence.","headline":"What are categories of algebras over an equational theory?","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/agda/algebra/category-theory/2025/08/17/categories-algebras-equational-theory.html"},"url":"http://localhost:4000/agda/algebra/category-theory/2025/08/17/categories-algebras-equational-theory.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"GitHub User"},"dateModified":"2025-08-17T18:05:12-06:00","datePublished":"2025-08-17T18:05:12-06:00","description":"Recently I made a pull request at Agda-UniMath formalizing categories of algebras over an equational theory. Part of my goal with this website is sharing my work with non-mathematical friends, so in this post I aim to motivate all the words in that sentence.","headline":"What are categories of algebras over an equational theory?","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2025/08/17/categories-algebras-equational-theory.html"},"url":"http://localhost:4000/2025/08/17/categories-algebras-equational-theory.html"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/assets/main.css">
-<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Abstract Nonsense">
-<script>MathJax={"tex":{"inlineMath":[["$","$"],["\\(","\\)"]],"displayMath":[["$$","$$"],["\\[","\\]"]]},"svg":{"fontCache":"global"}}</script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-</head>
-<body>
-<header class="site-header" role="banner">
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Abstract Nonsense" /></head>
+<body><header class="site-header" role="banner">
 
-  <div class="wrapper">
-<a class="site-title" rel="author" href="/">Abstract Nonsense</a><nav class="site-nav">
-        <input type="checkbox" id="nav-trigger" class="nav-trigger">
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Abstract Nonsense</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger">
           <span class="menu-icon">
-            <svg viewbox="0 0 18 15" width="18px" height="15px">
-              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"></path>
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
             </svg>
           </span>
         </label>
 
-        <div class="trigger">
-<a class="page-link" href="/about/">Who?</a><a class="page-link" href="/">Home</a>
-</div>
-      </nav>
-</div>
+        <div class="trigger"><a class="page-link" href="/about/">Who?</a><a class="page-link" href="/">Home</a></div>
+      </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>What are categories of algebras over an equational theory? | Abstract Nonsense</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="What are categories of algebras over an equational theory?" />
+<meta name="author" content="GitHub User" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Recently I made a pull request at Agda-UniMath formalizing categories of algebras over an equational theory. Part of my goal with this website is sharing my work with non-mathematical friends, so in this post I aim to motivate all the words in that sentence." />
+<meta property="og:description" content="Recently I made a pull request at Agda-UniMath formalizing categories of algebras over an equational theory. Part of my goal with this website is sharing my work with non-mathematical friends, so in this post I aim to motivate all the words in that sentence." />
+<link rel="canonical" href="http://localhost:4000/2025/08/17/categories-algebras-equational-theory.html" />
+<meta property="og:url" content="http://localhost:4000/2025/08/17/categories-algebras-equational-theory.html" />
+<meta property="og:site_name" content="Abstract Nonsense" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-08-17T18:05:12-06:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="What are categories of algebras over an equational theory?" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"GitHub User"},"dateModified":"2025-08-17T18:05:12-06:00","datePublished":"2025-08-17T18:05:12-06:00","description":"Recently I made a pull request at Agda-UniMath formalizing categories of algebras over an equational theory. Part of my goal with this website is sharing my work with non-mathematical friends, so in this post I aim to motivate all the words in that sentence.","headline":"What are categories of algebras over an equational theory?","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2025/08/17/categories-algebras-equational-theory.html"},"url":"http://localhost:4000/2025/08/17/categories-algebras-equational-theory.html"}</script>
+<!-- End Jekyll SEO tag -->
 
-  <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">What are categories of algebras over an equational theory?</h1>
-    <p class="post-meta">
-      <time class="dt-published" datetime="2025-08-17T18:05:12-06:00" itemprop="datePublished">Aug 17, 2025
-      </time></p>
-  </header>
+    <header class="post-header">
+        <h1 class="post-title p-name" itemprop="name headline">What are categories of algebras over an equational theory?</h1>
+        <p class="post-meta">
+            <time class="dt-published" datetime="2025-08-17T18:05:12-06:00" itemprop="datePublished">Aug 17, 2025
+            </time></p>
+    </header>
 
-  <div class="post-content e-content" itemprop="articleBody">
-    <p>Recently I made a pull request at Agda-UniMath formalizing <a href="https://github.com/UniMath/agda-unimath/pull/1483">categories of algebras over an equational theory</a>.
+    <div class="post-content e-content" itemprop="articleBody">
+        <p>Recently I made a pull request at Agda-UniMath formalizing <a href="https://github.com/UniMath/agda-unimath/pull/1483">categories of algebras over an equational theory</a>.
 Part of my goal with this website is sharing my work with non-mathematical friends, so in this post I aim to motivate all the words in that sentence.</p>
 
 <h2 id="1-whats-algebra">1. What’s algebra?</h2>
@@ -80,9 +88,9 @@ Algebraic gadgets and their structure can be quite different from these familiar
 <p>A <strong>quasigroup</strong> is a set $Q$ with a multiplication $*$ satisfying the <em>latin square property</em>: for $x, y \in Q$, there exist unique $a, b \in Q$ such that. $a * x = y, x * b = y$ - in other words, multiplying on the left or right by a fixed $x$ is a bijection.
 Multiplication in quasigroups is quite different from in more familiar examples as it is in general <em>nonassociative</em>.
 To see this, recall that property name, and recall that a <strong>latin square</strong> is a labeled square grid where each label value appears uniquely in each row and column.
-By labeling an $n \times n$ square with the numbers $1, …, n$, and by defining a multiplication sending $i * j$ to the value in the $i$th row and $j$th column, we may identify finite quasigroups with latin squares!<sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></p>
+By labeling an $n \times n$ square with the numbers $1, …, n$, and by defining a multiplication sending $i * j$ to the value in the $i$th row and $j$th column, we may identify finite quasigroups with latin squares!<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup></p>
 
-<p><img src="/assets/math/The-lexicographically-earliest-Latin-square-of-order-4_Q320.jpg" alt="A latin square, pulled from https://www.dr-mikes-math-games-for-kids.com/blog/2016/10/magic-squares-from-latin-squares/. Note that each number appears uniquely in each row and column. What quasigroup is presented by this latin square?"></p>
+<p><img src="/assets/math/The-lexicographically-earliest-Latin-square-of-order-4_Q320.jpg" alt="A latin square, pulled from https://www.dr-mikes-math-games-for-kids.com/blog/2016/10/magic-squares-from-latin-squares/. Note that each number appears uniquely in each row and column. What quasigroup is presented by this latin square?" /></p>
 
 <p>Quasigroups are a rich subject in their own right, as are rings and monoids and other gadgets unnamed, but the important connection between all is that we have a collection of stuff with some structure maps like multiplication that satisfy some equational identities.
 This “universal” generality is where we work for now.</p>
@@ -97,7 +105,7 @@ Algebra as a field is particularly amenable to logical methods, its identities a
 
 <h3 id="definition-21-signatures">Definition 2.1. Signatures</h3>
 
-<p>A <strong>signature</strong> is a set $S$ of dependent pairs<sup id="fnref:2"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup> of atoms, to be thought of as function symbols, and, for each function symbol $f$, an <em>arity</em> $a(f) \in \mathbb{N}$ to be thought of as the number of inputs $f$ should accept.</p>
+<p>A <strong>signature</strong> is a set $S$ of dependent pairs<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup> of atoms, to be thought of as function symbols, and, for each function symbol $f$, an <em>arity</em> $a(f) \in \mathbb{N}$ to be thought of as the number of inputs $f$ should accept.</p>
 
 <p>Signatures are a recipe for building <em>models</em>:</p>
 
@@ -161,7 +169,7 @@ Many a key has been pressed writing about categories and the “Grothendieck rev
 <p>A <strong>category</strong> is:</p>
 
 <ul>
-  <li>a collection<sup id="fnref:3"><a href="#fn:3" class="footnote" rel="footnote" role="doc-noteref">3</a></sup> $C^0$ of <em>objects</em>,</li>
+  <li>a collection<sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote" rel="footnote">3</a></sup> $C^0$ of <em>objects</em>,</li>
   <li>for each pair $x, y \in C^0$, a set of <em>morphisms</em> $hom(x, y) \in C^1$,</li>
   <li>for each triple $x, y, z \in C^0$, a <em>composition</em> map $hom(x, y) \to hom(y, z) \to hom(x, z) \in C^1$,</li>
   <li>satisfying some identities.</li>
@@ -199,22 +207,37 @@ That’s all for now!</p>
 
 <div class="footnotes" role="doc-endnotes">
   <ol>
-    <li id="fn:1">
-      <p>It turns out that this identification isn’t quite correct, as the right notion of equivalence of latin squares is more subtle than equivalence of quasigroups, but that’s a story for another time. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">↩</a></p>
+    <li id="fn:1" role="doc-endnote">
+      <p>It turns out that this identification isn’t quite correct, as the right notion of equivalence of latin squares is more subtle than equivalence of quasigroups, but that’s a story for another time. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
-    <li id="fn:2">
-      <p>All that’s meant by “dependent pair” is that the second component of each pair - in this case, the arities - <em>depends</em> on the function symbol in the first component. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">↩</a></p>
+    <li id="fn:2" role="doc-endnote">
+      <p>All that’s meant by “dependent pair” is that the second component of each pair - in this case, the arities - <em>depends</em> on the function symbol in the first component. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
-    <li id="fn:3">
-      <p>This collection may not itself be a set! <a href="#fnref:3" class="reversefootnote" role="doc-backlink">↩</a></p>
+    <li id="fn:3" role="doc-endnote">
+      <p>This collection may not itself be a set! <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
 </div>
 
-  </div>
-<a class="u-url" href="/agda/algebra/category-theory/2025/08/17/categories-algebras-equational-theory.html" hidden></a>
+    </div><a class="u-url" href="/2025/08/17/categories-algebras-equational-theory.html" hidden></a>
 </article>
 
+<script>
+    MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+    };
+</script>
+<script id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+
+<script src="https://utteranc.es/client.js"
+        repo="djspacewhale/djspacewhale.github.io"
+        issue-term="pathname"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+</script>
       </div>
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/"></data>
@@ -226,22 +249,15 @@ That’s all for now!</p>
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
-          <li class="p-name">Abstract Nonsense</li>
-<li><a class="u-email" href="mailto:garrett.figueroa@gmail.com">garrett.figueroa@gmail.com</a></li>
-</ul>
+          <li class="p-name">GitHub User</li><li><a class="u-email" href="mailto:garrett.figueroa@gmail.com">garrett.figueroa@gmail.com</a></li></ul>
       </div>
 
       <div class="footer-col footer-col-2"> 
 
-<ul class="social-media-list">
-<li><a href="https://github.com/djspacewhale"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">djspacewhale</span></a></li>
-<li><a href="https://www.linkedin.com/in/garf98"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#linkedin"></use></svg> <span class="username">garf98</span></a></li>
-<li><a rel="me" href="https://mathstodon.xyz/@djspacewhale"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#mastodon"></use></svg> <span class="username">djspacewhale</span></a></li>
-</ul>
-</div>
+<ul class="social-media-list"><li><a href="https://github.com/djspacewhale"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">djspacewhale</span></a></li><li><a href="https://www.linkedin.com/in/garf98"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#linkedin"></use></svg> <span class="username">garf98</span></a></li><li><a rel="me" href="https://mathstodon.xyz/@djspacewhale"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#mastodon"></use></svg> <span class="username">djspacewhale</span></a></li><li><a href="https://www.twitter.com/jekyllrb"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">jekyllrb</span></a></li><li><a href="/feed.xml"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#rss"></use></svg> <span>rss</span></a></li></ul></div>
 
       <div class="footer-col footer-col-3">
-        <p>Howdy! This is my personal website for assorted interests - math, music,  film, baking, bicycling, and whatever else I'd like to connect with folks about.</p>
+        <p>Howdy! This is my personal website for assorted interests - math, music,  film, baking, bicycling, and whatever else I&#39;d like to connect with folks about.</p>
       </div>
     </div>
 

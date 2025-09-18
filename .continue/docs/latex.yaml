@@ -1,0 +1,6 @@
+name: LaTeX
+version: 0.0.1
+schema: v1
+docs:
+  - name: LaTeX
+    startUrl: https://en.wikibooks.org/wiki/LaTeX

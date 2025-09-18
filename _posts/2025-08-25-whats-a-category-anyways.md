@@ -1,9 +1,8 @@
 ---
-layout: post
+layout: posts
 title: What's a category anyways?
 date: 2025-08-25T22:54:08.144Z
-categories:
-  - category-theory
+categories: []
 fmContentType: post
 draft: true
 slug: category

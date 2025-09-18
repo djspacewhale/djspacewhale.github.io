@@ -1,0 +1,6 @@
+name: Markdown
+version: 0.0.1
+schema: v1
+docs:
+  - name: Markdown
+    startUrl: https://www.markdownguide.org/

@@ -1,11 +1,8 @@
 ---
-layout: post
+layout: posts
 title: What are categories of algebras over an equational theory?
 date: 2025-08-18T00:05:12.445Z
-categories:
-    - agda
-    - algebra
-    - category-theory
+categories: []
 fmContentType: post
 draft: false
 keywords: []

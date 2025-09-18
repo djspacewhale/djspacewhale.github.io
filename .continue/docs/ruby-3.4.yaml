@@ -1,0 +1,6 @@
+name: Ruby
+version: 3.4.5
+schema: v1
+docs:
+  - name: Ruby 3.4
+    startUrl: https://docs.ruby-lang.org/en/3.4/

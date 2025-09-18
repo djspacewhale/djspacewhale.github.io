@@ -1,0 +1,6 @@
+name: MathJax
+version: 4.0.0
+schema: v1
+docs:
+  - name: MathJax 4.0
+    startUrl: https://docs.mathjax.org/en/v4.0/

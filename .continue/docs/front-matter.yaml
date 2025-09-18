@@ -1,0 +1,6 @@
+name: Front Matter
+version: 0.0.1
+schema: v1
+docs:
+  - name: Front Matter
+    startUrl: https://frontmatter.codes/docs
